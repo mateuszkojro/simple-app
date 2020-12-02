@@ -1,20 +1,17 @@
-const express = require('express')
-const cors = require('cors')
+const express = require("express");
+const cors = require("cors");
 
-const port = 80
+const port = 80;
 
-const app = express()
+const app = express();
 
-app.use(cors())
+app.use(cors());
 
-app.get('/',(req,res)=>{
-	console.log("someone accesed your site")
-	res.send("Hello world!")
+app.get("/", (req, res) => {
+  console.log("someone accesed your site");
+  res.send("Happy christma🎄");
+});
 
-})
-
-app.listen(port, ()=>{
-	console.log(`app is running on port ${port}`)
-})
-
-
+app.listen(port, () => {
+  console.log(`app is running on port ${port}`);
+});
